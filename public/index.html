@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI Video Checker</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0B1B3A;--navy2:#14295C;--blue:#2F6BFF;--ink:#0F1B33;--mute:#53627F;--line:#DCE3F0;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;min-height:100%;background:var(--navy);color:#fff;font:400 16px/1.5 Manrope,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.app{max-width:560px;margin:0 auto;padding:20px 16px 96px}
+h1{font-size:2rem;line-height:1.15;font-weight:800;letter-spacing:-.02em;margin:14px 0 8px}
+h2{font-size:1.15rem;font-weight:800;margin:26px 0 10px}
+h3{font-size:1rem;font-weight:800;margin:0 0 4px}
+.lead{color:#C9D5F2;margin:0 0 20px}.dim{color:#9FB0D6}
+.btns{display:grid;gap:10px;margin-bottom:16px}
+.btn{min-height:50px;border-radius:14px;border:2px solid transparent;font:inherit;font-weight:800;padding:10px 18px;cursor:pointer}
+.p{background:var(--blue);color:#fff}.g{background:transparent;border-color:#4C6BB8;color:#fff}
+.s{background:#EEF2FB;color:var(--ink);min-height:44px;font-size:.95rem}.d{background:#fff;border-color:#C23B3B;color:#9B1C1C;min-height:44px}
+.btn:disabled{opacity:.5;cursor:default}
+button:focus-visible,input:focus-visible{outline:3px solid #FFD166;outline-offset:2px}
+.card{background:#fff;color:var(--ink);border-radius:18px;padding:16px;margin:0 0 12px}
+.card p{margin:4px 0;color:var(--mute)}
+.note{background:var(--navy2);border:1px solid #3857A6;border-radius:14px;padding:12px 14px;color:#DCE6FF;margin:0 0 8px}
+.chip{display:inline-block;border-radius:999px;padding:2px 12px;font-size:.85rem;font-weight:800;margin:2px 0 6px}
+.un{background:#EEF1F6;color:#3E4A63;border:1px solid #B9C3D6}.ok{background:#D1FAE5;color:#065F46}.pr{background:#FEF3C7;color:#92400E}.fl{background:#FEE2E2;color:#991B1B}
+input[type=url]{width:100%;min-height:50px;border:2px solid var(--line);border-radius:12px;padding:8px 12px;font:inherit;color:var(--ink);margin:8px 0}
+.hid{display:none}.err{color:#B42318;font-weight:600;margin:6px 0}
+ul.l{list-style:none;padding:0;margin:0}
+.row{display:flex;gap:8px;align-items:stretch;margin:0 0 10px}
+.open{flex:1;text-align:left;background:#fff;color:var(--ink);border:0;border-radius:14px;padding:12px 14px;font:inherit;cursor:pointer;min-height:56px}
+.open small{display:block;color:var(--mute)}
+.chk{display:flex;gap:8px;margin:6px 0;color:var(--ink)}.chk b{flex:none;width:1.4em}
+.thumbs{display:flex;gap:8px;margin:8px 0}.thumbs img{flex:1;min-width:0;max-height:110px;object-fit:cover;border-radius:10px;border:1px solid var(--line)}
+.agree{display:flex;gap:10px;align-items:flex-start;color:var(--ink);margin:10px 0}.agree input{width:24px;height:24px;flex:none;margin-top:2px}
+.spin{width:22px;height:22px;border:3px solid #C9D5F2;border-top-color:var(--blue);border-radius:50%;animation:r 1s linear infinite;display:inline-block;vertical-align:middle;margin-right:8px}
+@keyframes r{to{transform:rotate(360deg)}}@media(prefers-reduced-motion:reduce){.spin{animation:none}}
+nav{position:fixed;left:0;right:0;bottom:0;background:#08142D;border-top:1px solid #243C78;display:flex;justify-content:center;padding:6px 8px calc(6px + env(safe-area-inset-bottom,0px))}
+nav button{flex:1;max-width:180px;min-height:48px;background:none;border:0;color:#9FB0D6;font:inherit;font-weight:600;border-radius:12px;cursor:pointer}
+nav button[aria-current=page]{color:#fff;background:var(--navy2)}
+</style></head><body>
+<div class="app"><main id="view"></main></div>
+<nav aria-label="Main"><button data-v="home">Home</button><button data-v="history">Scan history</button><button data-v="privacy">Privacy</button></nav>
+<script src="/app.js"></script>
+</body></html>
