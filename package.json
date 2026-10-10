@@ -1,0 +1,19 @@
+{
+  "name": "ai-video-checker",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Mobile-first AI Video Checker prototype with a small backend that checks still frames through Reality Defender's free tier",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0",
+    "multer": "^1.4.5-lts.1"
+  }
+}
